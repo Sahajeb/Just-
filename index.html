@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Face Reading Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Face Reading with AI</h1>
+    <div id="uploadSection">
+      <input type="file" id="uploadInput" accept="image/*">
+      <button id="uploadBtn">Upload Image</button>
+    </div>
+    <div id="preview" class="hidden">
+      <h2>Preview</h2>
+      <img id="previewImage" src="" alt="Uploaded Face">
+      <button id="analyzeBtn">Analyze Face</button>
+    </div>
+    <div id="loader" class="hidden">Analyzing...</div>
+    <div id="results" class="hidden"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
